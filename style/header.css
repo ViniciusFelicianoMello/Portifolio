@@ -1,0 +1,44 @@
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;  
+    width: 100%;
+    background-color: var(--azul-um);
+    padding: 0.5rem 0;
+}
+
+.cabecalho_img {
+    width: 80px;
+    margin-left: 4rem;
+}
+
+.opcao{
+    color: var(--azul-tres);
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+} .opcao:hover, .opcao:active{
+    color: var(--cor-tres);
+    scale: 1.2;
+    border-bottom: 2px solid var(--cor-tres);
+    padding: 0.2em;
+    transition: 0.4s;
+}
+
+.contate-me-botao {
+    color: var(--azul-um);
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--azul-tres);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px var(--azul-dois), -3px -3px 5px var(--azul-dois);
+    margin-right: 4rem;
+} .contate-me-botao:hover, .contate-me-botao:active {
+    scale: 1.1;
+    color: var(--cor-dois);
+    box-shadow: 3px 3px 5px var(--cor-dois), -3px -3px 5px var(--cor-dois);
+    background-color: var(--azul-dois);
+}

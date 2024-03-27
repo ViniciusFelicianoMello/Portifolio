@@ -1,0 +1,26 @@
+@import url("style/header.css");
+@import url("style/banner.css");
+
+:root {
+    --azul-um: #effbff;
+    --azul-dois: #36cbfd;
+    --azul-tres: #1D24CA;
+    --azul-quatro: #001d86;
+    --azul-cinco: #201658;
+
+    --cor-dois:#fff5e1;
+    --cor-tres: #ffaa00;
+}
+
+*{ /*reset margem */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--azul-um);
+    color: var(--azul-cinco);
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+}

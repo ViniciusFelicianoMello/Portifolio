@@ -13,22 +13,24 @@
     display: grid;
     grid-template-columns: 50% 50%;
 }
-
 .banner_apresentacao {
-    margin: 15vw 0 0 10rem;
+    margin: 40% 0 0 10vw;
     text-align: left;
-    transform:rotate(-5deg); 
+    transform: rotate(-5deg); 
     width: 100;
 }
+
+/* ============ Nome Animeção ============ */     
 .apresentacao_nome {
-    width: 12ch;
+    width: 15ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: var(--font-graf);
     font-size: 6vw;
-    color: var(--azul-dois);
+    color: var(--azul-tres);
     font-weight: 400;
+    text-shadow: 2px 4px 2px var(--cor-dois), -2px -2px 4px var(--cor-tres);
 } @keyframes typing {
     from {
       width: 0
@@ -39,20 +41,25 @@
     50% {
       border-color: transparent
     }
+/* ============ Nome Animeção ============ */
+
 } .ponto {
     color: var(--cor-tres);
+    text-shadow: 2px 2px 2px var(--azul-dois), -2px -2px 2px var(--azul-dois);
 }
 .apresentcao_ola {
     font-family: var(--font-graf);
     color: var(--azul-um);
     font-size: 1.5vw;
     font-weight: 400;
+    text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-dois);
 }
 .apresentacao_sub {
     font-family: var(--font-graf);
     color: var(--azul-dois);
     font-size: 1.9vw;
     font-weight: 400;
+    text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-tres);
 }
 
 .banner_links {
@@ -67,4 +74,8 @@
 .link_img:hover img, .link_img:active img {
     transform: scale(1.2);
     transition: transform 0.3s;
+}
+
+@media screen and (max-width:500px) {
+   
 }

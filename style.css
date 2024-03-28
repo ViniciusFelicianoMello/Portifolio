@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Rubik+Wet+Paint&display=swap');
+
 @import url("style/header.css");
 @import url("style/banner.css");
 
@@ -8,8 +12,15 @@
     --azul-quatro: #001d86;
     --azul-cinco: #201658;
 
-    --cor-dois:#fff5e1;
-    --cor-tres: #ffaa00;
+    --azul-degrade-light: ;
+    --azul-degrade-dark: linear-gradient(to bottom right, #201658, #001d86);;
+
+    --cor-dois:#f0e4c8;
+    --cor-tres: #ffdd00;
+
+    --font-marker: "Permanent Marker", cursive;
+    --font-paint: "Finger Paint", sans-serif;
+    --font-graf: "Rubik Wet Paint", system-ui;
 }
 
 *{ /*reset margem */

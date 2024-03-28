@@ -1,12 +1,70 @@
 .banner {
-    background-image: url("../assets/Backgroundart.png");
+    background-image: url("../assets/Bricks.png");
     background-repeat: no-repeat;
     background-size: contain;
-    align-items: center;
-    text-align: center;
+    width: 100%;
 }
 
 .container {
     height: 100vh;
+}
 
+.banner_div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.banner_apresentacao {
+    margin: 15vw 0 0 10rem;
+    text-align: left;
+    transform:rotate(-5deg); 
+    width: 100;
+}
+.apresentacao_nome {
+    width: 12ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: var(--font-graf);
+    font-size: 6vw;
+    color: var(--azul-dois);
+    font-weight: 400;
+} @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+} .ponto {
+    color: var(--cor-tres);
+}
+.apresentcao_ola {
+    font-family: var(--font-graf);
+    color: var(--azul-um);
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+.apresentacao_sub {
+    font-family: var(--font-graf);
+    color: var(--azul-dois);
+    font-size: 1.9vw;
+    font-weight: 400;
+}
+
+.banner_links {
+    margin: 1vw;
+}
+
+.link_img {
+    position: relative;
+    margin-left: 2vw;
+    display: inline-block;
+}
+.link_img:hover img, .link_img:active img {
+    transform: scale(1.2);
+    transition: transform 0.3s;
 }

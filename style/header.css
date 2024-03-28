@@ -11,34 +11,70 @@
 
 .cabecalho_img {
     width: 80px;
-    margin-left: 4rem;
+    margin-left: 10rem;
 }
 
+.opcoes{
+    background-color: var(--azul-quatro);
+    padding: 1rem;
+    border-radius: 2rem;
+}
 .opcao{
-    color: var(--azul-tres);
+    color: var(--azul-dois);
     text-decoration: none;
     font-size: 1.3rem;
     margin: 0 1rem;
+    font-family: var(--font-paint);
+    font-weight: 400;
 } .opcao:hover, .opcao:active{
-    color: var(--cor-tres);
+    color: var(--cor-dois);
     scale: 1.2;
-    border-bottom: 2px solid var(--cor-tres);
-    padding: 0.2em;
+    border-bottom: 2px solid var(--cor-dois);
+    padding: 0.1em;
     transition: 0.4s;
 }
 
 .contate-me-botao {
     color: var(--azul-um);
     text-decoration: none;
-    font-size: 1.5rem;
-    background-color: var(--azul-tres);
-    padding: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: var(--font-paint);
+    font-size: 1vw;
+    font-weight: 400;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
     box-shadow: 3px 3px 5px var(--azul-dois), -3px -3px 5px var(--azul-dois);
-    margin-right: 4rem;
-} .contate-me-botao:hover, .contate-me-botao:active {
-    scale: 1.1;
-    color: var(--cor-dois);
-    box-shadow: 3px 3px 5px var(--cor-dois), -3px -3px 5px var(--cor-dois);
-    background-color: var(--azul-dois);
+    margin-right: 10rem;
 }
+.contate-me-botao {
+    background: var(--azul-quatro);
+    border: none;
+    z-index: 1;
+  }
+  .contate-me-botao:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: var(--azul-dois);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--cor-dois), -3px -3px 5px var(--cor-dois); 
+    transition: all 0.3s ease;
+  }
+  .contate-me-botao:hover {
+    color: var(--cor-dois);
+  }
+  .contate-me-botao:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .contate-me-botao:active {
+    top: 2px;
+  }

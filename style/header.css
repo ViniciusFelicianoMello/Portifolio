@@ -7,7 +7,7 @@
         z-index: 1000;  
         width: 100vw;
         background-color: var(--azul-um);
-        padding: 0.5rem 0;
+        padding: 0.5vw 0;
     }
     
     .cabecalho_img {
@@ -40,26 +40,22 @@
     }
     
 /* ============ Botão Animação ============ */     
-    .contate-me-botao {
+     .contate-me-botao {
+        background: var(--azul-quatro);
         color: var(--azul-um);
-        text-decoration: none;
-        border-radius: 5px;
-        padding: 10px 25px;
-        font-family: var(--font-paint);
         font-size: 1vw;
-        font-weight: 400;
-        background: transparent;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        position: relative;
-        display: inline-block;
+        border-radius: 5px;
+        padding: 0.8vw 2vw;
         box-shadow: 3px 3px 5px var(--azul-dois), -3px -3px 5px var(--azul-dois);
         margin-right: 10vw;
-    }
-    .contate-me-botao {
-        background: var(--azul-quatro);
-        border: none;
         z-index: 1;
+        text-decoration: none;
+        font-family: var(--font-paint);
+        font-weight: 400;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        position: relative;
+        display: inline-block;
     }
     .contate-me-botao:after {
         position: absolute;
@@ -92,6 +88,10 @@
 }
 
 @media screen and (max-width:840px) {
+    .cabecalho {
+        padding: 0.1vw 0;
+    }
+    
     .cabecalho_img {
         margin-left: 5vw;
         width: 60px;
@@ -124,7 +124,7 @@
         background-image: url("../assets/hover/menu.png"); /* imagem ativa */
     }
     .opcoes_botao:checked ~ .opcoes_rotulo {
-        background: var(--azul-quatro); /*back ativo*/
+        background: var(--azul-cinco); /*back ativo*/
     }
     .menu_img {
         padding: 0.2em; /*pad imagem*/
@@ -135,9 +135,9 @@
         top: 100%; /* distancia do topo */
         right: 0; /* distancia a direita */
         /* estilização */
-        background-color: #14094f7a;
+        background-color: var(--azul-quatro);
         border-radius: 15px 0 15px 15px;
-        border: 3px solid var(--azul-quatro);
+        border: 3px solid var(--azul-cinco);
         text-align: right;
         list-style-type: none;
         width: 15rem;
@@ -150,18 +150,18 @@
     }
     /* estilização */
     .lista_menu_lista {
-        margin: 0.5rem 0;
+        margin: 1rem 0;
     }
     .menu_opcao {
-        color: var(--azul-quatro);
+        color: var(--azul-dois);
         font-family: var(--font-paint);
         font-size: 2rem;
         text-decoration: none;
         margin: 0.5rem;
     } 
     .contate-menu {
-        border-top: 0.5vw solid var(--azul-quatro);
-        margin-top: 1.5rem;
+        border-top: 0.5vw solid var(--azul-cinco);
+        
         padding: 0.5rem 0 0 0.9rem;
     }
     .menu_opcao:active {

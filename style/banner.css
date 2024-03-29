@@ -1,81 +1,178 @@
-.banner {
-    background-image: url("../assets/Bricks.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-}
-
-.container {
-    height: 100vh;
-}
-
-.banner_div {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-.banner_apresentacao {
-    margin: 40% 0 0 10vw;
-    text-align: left;
-    transform: rotate(-5deg); 
-    width: 100;
-}
-
-/* ============ Nome Animeção ============ */     
-.apresentacao_nome {
-    width: 15ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: var(--font-graf);
-    font-size: 6vw;
-    color: var(--azul-tres);
-    font-weight: 400;
-    text-shadow: 2px 4px 2px var(--cor-dois), -2px -2px 4px var(--cor-tres);
-} @keyframes typing {
-    from {
-      width: 0
+@media screen and (max-width: 10000px) {
+    .banner {
+        background-image: url("../assets/Bricks.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
     }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
+    
+    .container {
+        height: 100vh;
     }
-/* ============ Nome Animeção ============ */
+    
+    .banner_div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .banner_apresentacao {
+        margin: 40% 0 0 10vw;
+        text-align: left;
+        transform: rotate(-5deg); 
+        width: 100;
+    }
+    
+    /* ============ Nome Animeção ============ */     
+    .apresentacao_nome {
+        width: 15ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: var(--font-graf);
+        font-size: 6vw;
+        color: var(--azul-tres);
+        font-weight: 400;
+        text-shadow: 2px 4px 2px var(--cor-dois), -2px -2px 4px var(--cor-tres);
+    } @keyframes typing {
+        from {
+          width: 0
+        }
+      }
+          
+      @keyframes blink {
+        50% {
+          border-color: transparent
+        }
+    /* ============ Nome Animeção ============ */
+    
+    } .ponto {
+        color: var(--cor-tres);
+        text-shadow: 2px 2px 2px var(--azul-dois), -2px -2px 2px var(--azul-dois);
+    }
+    .apresentcao_ola {
+        font-family: var(--font-graf);
+        color: var(--azul-um);
+        font-size: 1.5vw;
+        font-weight: 400;
+        text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-dois);
+    }
+    .apresentacao_sub {
+        font-family: var(--font-graf);
+        color: var(--azul-dois);
+        font-size: 1.9vw;
+        font-weight: 400;
+        text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-tres);
+    }
+    
+    .banner_links {
+        margin: 1vw;
+        text-align: center;
+    }
+    
+    .link_img {
+        margin-left: 2vw;
+        display: inline-block;
+    }
+    .link_img:hover, .link_img:active {
+        transform: scale(1.2);
+        transition: transform 0.3s;
+    }
+    
+    .banner_imagem {
+        margin: 20% 0 0 8vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner_img {
+        top: 40%;
+        width: 35vw;
+    }
+/* ============ Curriculo Animeção ============ */
+    .curriculo_link {
+        background-color: var(--cor-tres);
+        color: var(--azul-quatro);
+        font-weight: bolder;
+        font-size: 0.8vw;
+        border-radius: 5px;
+        border: none;
+        padding: 0.4vw;
+        bottom: 0.8rem;
+        margin-left: 2vw;
+        display: inline-block;
+        text-decoration: none;
+        font-family: var(--font-paint);
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+    } 
+    .curriculo {
+        margin-left: 9vw;
+        color: var(--azul-quatro);
+        background-color: var(--cor-tres);
+        text-shadow: none;
+        text-decoration: none;
+        padding: 0.3vw;
+        border-radius: 0.5vw;
+        z-index: 1;
+    }
+    .curriculo:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-color: var(--azul-tres);
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px var(--cor-dois), -3px -3px 5px var(--cor-dois); 
+        transition: all 0.3s ease;
+    }
+    .curriculo:hover {
+        color: var(--cor-dois);
+    }
+    .curriculo:hover:after {
+        left: 0;
+        width: 100%;
+    }
+    .curriculo:active {
+        top: 2px;
+    }
+/* ============ Curriculo Animeção ============ */
 
-} .ponto {
-    color: var(--cor-tres);
-    text-shadow: 2px 2px 2px var(--azul-dois), -2px -2px 2px var(--azul-dois);
-}
-.apresentcao_ola {
-    font-family: var(--font-graf);
-    color: var(--azul-um);
-    font-size: 1.5vw;
-    font-weight: 400;
-    text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-dois);
-}
-.apresentacao_sub {
-    font-family: var(--font-graf);
-    color: var(--azul-dois);
-    font-size: 1.9vw;
-    font-weight: 400;
-    text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-tres);
 }
 
-.banner_links {
-    margin: 1vw;
-}
+@media screen and (max-width:840px) {
+    .banner_apresentacao {
+        margin: 40% 0 0 7vw;
+    }
 
-.link_img {
-    position: relative;
-    margin-left: 2vw;
-    display: inline-block;
-}
-.link_img:hover img, .link_img:active img {
-    transform: scale(1.2);
-    transition: transform 0.3s;
+    .link_img img {
+        width: 50%;
+    }
+
+    .curriculo_link {
+        padding: 0.3rem;
+        bottom: 0.8rem;
+    }
+
+    .banner_imagem {
+        margin: 24% 0 0 8vw
+    }
 }
 
 @media screen and (max-width:500px) {
-   
+    .banner {
+        background-size: contain;
+        width: 100%;
+        background-position: 0 15vh;
+    }
+
+    .banner_apresentacao {
+        margin: 60% 0 0 4vw;
+    }
+
+    .banner_imagem {
+        margin: 50% 0 0 8vw
+    }
 }

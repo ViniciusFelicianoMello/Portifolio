@@ -4,6 +4,7 @@
 
 @import url("style/header.css");
 @import url("style/banner.css");
+@import url("style/about.css");
 
 :root {
     --azul-um: #effbff;
@@ -12,10 +13,12 @@
     --azul-quatro: #001d86;
     --azul-cinco: #201658;
 
-    --azul-degrade-light: ;
-    --azul-degrade-dark: linear-gradient(to bottom right, #201658, #001d86);;
+    --azul-degrade-light: linear-gradient(to  right, #effbff, #c4f1ff);
+    --azul-degrade-medium: linear-gradient(to  right, #0d1ca2, #6ddbff);
+    --azul-degrade-dark: linear-gradient(to  right, #201658, #001d86);
 
     --cor-dois:#f0e4c8;
+    --cor-dois-t:#f0e4c8ce;
     --cor-tres: #ffdd00;
 
     --font-marker: "Permanent Marker", cursive;
@@ -30,10 +33,14 @@
 
 body {
     background-color: var(--azul-um);
-    color: var(--azul-cinco);
+    color: var(--azul-quatro);
     font-size: 16px;
     font-weight: 400;
     box-sizing: border-box;
+}
+
+.container {
+    height: 90vh;
 }
 
 .custom-botao {
@@ -42,4 +49,20 @@ body {
     transition: all 0.5s ease;
     position: relative;
     display: inline-block;
+}
+
+.titulo {
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--font-marker);
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: var(--azul-tres);
+}
+
+@media screen and (max-width:500px) {
+    .container {
+        height: 120vw;
+    }
 }

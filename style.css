@@ -17,7 +17,7 @@
     --azul-degrade-medium: linear-gradient(to  right, #0d1ca2, #6ddbff);
     --azul-degrade-dark: linear-gradient(to  right, #201658, #001d86);
 
-    --cor-dois:#f0e4c8;
+    --cor-dois:#fcf4e1;
     --cor-dois-t:#f0e4c8ce;
     --cor-tres: #ffdd00;
 
@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-    height: 90vh;
+    height: 43vw;
 }
 
 .custom-botao {
@@ -59,6 +59,11 @@ body {
     font-weight: 400;
     font-size: 1.5vw;
     color: var(--azul-tres);
+}
+
+.show {
+    position: relative; 
+    z-index: 1; 
 }
 
 @media screen and (max-width:500px) {

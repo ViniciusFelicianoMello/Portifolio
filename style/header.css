@@ -115,7 +115,7 @@
     .cabecalho_menu-hamburguer {
         width: 4.5em; /* tamanho do menu */
         height: 4em; /* tamanho do menu */
-        background-image: url("../assets/menu.png"); /* imagem do menu */
+        background-image: url("../assets/icons/menu.png"); /* imagem do menu */
         background-position: center; /* posição */
         background-repeat: no-repeat; /* não repetir img */
         display: inline-block; /* posicionamento inline */

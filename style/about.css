@@ -59,17 +59,86 @@
 
 .sobremim_desc_texto-sobre {
     font-family: var(--font-paint);
-    color: var(--azul-tres);
+    color: var(--azul-quatro);
     font-weight: 400;
     font-size: 1.2vw;
     padding: 1.8vw;
     max-width: 90%;
-    position: relative; 
-    z-index: 1; 
-    margin: auto;
+    float: left;
+    letter-spacing: 0px;
 }
 
 
-
 /* ========== INFOS ========== */
+.sobremim_infos {
+    display: flex;
+    gap: 2vw;
+    margin: 3vw 0 0 0;
+}
+
+.sobremim_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: var(--cor-dois-t);
+    position: relative;
+    overflow: hidden;
+    height: 13vw;
+    width: 15vw;
+}
+.sobremim_card::before {
+    content: "";
+    width: 10vw;
+    height: 40vw;
+    left: 6%;
+    top: -103%;
+    position: absolute;
+    background: var(--azul-dois);
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.sobremim_card::after {
+    content: "";
+    position: absolute;
+    background: var(--cor-dois);
+    inset: 3px;
+    border-radius: 1rem;
+}
+
+.info__img{
+    margin: 1vw;
+}
+
+.info_titulo {
+    color: var(--azul-tres);
+    font-size: 2.5vw;
+    font-weight: 400;
+    font-family: var(--font-graf);
+}
+
+.info_texto_sub {
+    font-family: var(--font-paint);
+    font-weight: bold;
+    font-size: 2vw;
+    color: var(--azul-tres);
+    align-items: center;
+}
+
+.info_texto {
+    font-family: var(--font-paint);
+    font-weight: 400;
+    font-size: 1vw;
+    align-items: center;
+}
+
 

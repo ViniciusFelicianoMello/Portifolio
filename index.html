@@ -18,7 +18,7 @@
         <div class="opcoes">
             <a href="#home" class="opcao">Home</a>
             <a href="#sobremim" class="opcao">Sobre mim</a>
-            <a href="#tecnologias" class="opcao">Tecnologias</a>
+            <a href="#habilidades" class="opcao">Habilidades</a>
             <a href="#servicos" class="opcao">Serviços</a>
             <a href="#projetos" class="opcao">Projetos</a>
         </div>
@@ -35,7 +35,7 @@
             <ul class="lista_menu">
                 <li class="lista_menu_lista"><a href="#home" class="menu_opcao click">Home</a></li>
                 <li class="lista_menu_lista"><a href="#sobremim" class="menu_opcao click2">Sobre mim</a></li>
-                <li class="lista_menu_lista"><a href="#tecnologias" class="menu_opcao click2">Tecnologia</a></li>
+                <li class="lista_menu_lista"><a href="#habilidades" class="menu_opcao click2">Habilidades</a></li>
                 <li class="lista_menu_lista"><a href="#servicos" class="menu_opcao click1">Serviços</a></li>
                 <li class="lista_menu_lista"><a href="#projetos" class="menu_opcao click1">Projetos</a></li>
                 <li class="lista_menu_lista contate-menu"><a href="#contato" class="menu_opcao contate-menu">Contate-me</a></li>          
@@ -59,13 +59,13 @@
 
                     <div class="banner_links">
                         <a href="https://github.com/ViniciusFelicianoMello" target="_blank" class="link_img img_gli">
-                            <img src="assets/github1.png" alt="Github">                        
+                            <img src="assets/icons/github1.png" alt="Github">                        
                         </a>
                         <a href="https://www.linkedin.com/in/vinicius-feliciano-mello/" target="_blank" class="link_img img_gli">
-                            <img src="assets/linkedin.png" alt="Linkedin">                     
+                            <img src="assets/icons/linkedin.png" alt="Linkedin">                     
                         </a>
                         <a href="https://www.instagram.com/viinifeliciano/" target="_blank" class="link_img img_gli">
-                            <img src="assets/instagram1.png" alt="Instagram"> 
+                            <img src="assets/icons/instagram1.png" alt="Instagram"> 
                         </a>
                     </div>
                 </div>
@@ -90,17 +90,26 @@
                     
                     <div class="sobremim_desc">
                         <div class="sobremim_desc_texto">
-                            <p class="sobremim_desc_texto-sobre">Sou um desenvolvedor apaixonado por tecnologia, estou em busca de aprender e me desenvolver pessoalmente e profissionalmente, sempre colaborando com a empresa e equipe. Estou iniciando na carreira de programador e tenho conhecimento em <b class="sobremim_destaque">JavaScript, HTML, CSS, C#, Dotnet, Git e Github</b>.</p>
+                            <p class="sobremim_desc_texto-sobre show">Sou um desenvolvedor apaixonado por tecnologia, estou em busca de aprender e me desenvolver pessoalmente e profissionalmente, sempre colaborando com a empresa e equipe. Estou iniciando na carreira de programador e tenho conhecimento em <b class="sobremim_destaque">JavaScript, HTML, CSS, C#, Dotnet, Git e Github</b>.<span></span></p>
                         </div>
-                        <div class="sobremim_desc_infos">
-                            <div class="desc_infos_card">
-                                <span class="desc_info_titulo">10+</span>
-                                <span class="desc_info_texto">Projetos <br> completos</span>
+
+                        <div class="sobremim_infos">
+                            <div class="sobremim_card">
+                                <img src="assets/icons/project.png" width="18" alt="project icon" class="info__img show">
+                                <p class="info_texto_sub show"><span class="info_titulo show">10</span>+</p>
+                                <span class="info_texto show">Projetos completos</span>
                             </div>
 
-                            <div class="desc_infos_card">
-                                <span class="desc_info_titulo">1º<span>
-                                <span class="desc_info_texto">Ano <br> estudando</span>
+                            <div class="sobremim_card">
+                                <img src="assets/icons/Experience.png" width="18" alt="experience icon" class="info__img show">
+                                <p class="info_texto_sub show"><span class="info_titulo show">1</span>º</p>
+                                <span class="info_texto show">Ano estudando</span>
+                            </div>
+
+                            <div class="sobremim_card">
+                                <img src="assets/icons/support.png" width="18" alt="supporte icon" class="info__img show">
+                                <p class="info_texto_sub show"><span class="info_titulo show">24</span>H</p>
+                                <span class="info_texto show">Suporte online</span>
                             </div>
                         </div>
                     </div>
@@ -108,7 +117,11 @@
         </section>
 
 <!-- ============ HABILIDADES ============  -->
-
+        <section class="habilidades container" id="habilidades">
+            <div class="titulo">
+                <h2 class="pagina_titulo">Habilidades</h2>
+            </div>
+        </section>
 
 <!-- ============ SERVIÇOS ============  -->
 
@@ -121,6 +134,11 @@
 
 <!-- ============ FOOTER ============  -->
     </main>
+
+
+
+    <script src="javascript/contadorAPP.js"></script>
+    <script src="javascript/scrollSectionAPP.js"></script>
 
 </body>
 </html>

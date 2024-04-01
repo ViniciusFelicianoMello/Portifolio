@@ -162,9 +162,9 @@
     .banner {
         display: flex;
         flex-direction: column;
-        background-repeat: repeat-x;
+        background-repeat: repeat-y;
         background-size: 200%;
-        height: 90vw;
+        height: 120vw;
     }
 
     .banner_div {
@@ -175,8 +175,7 @@
     }
 
     .banner_apresentacao {
-        margin: 26% 0 0 4vw;
-        scale: 1.5;
+        margin: 70% 0 0 4vw;
     }
 
     .banner_imagem {
@@ -187,3 +186,4 @@
         width: 50vw;
     }
 }
+

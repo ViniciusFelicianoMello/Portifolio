@@ -271,19 +271,21 @@
     .slider {
         margin: 0vw 0 0 0;
         width: 100%;
+        height: 36svw;
         top: 0;
     }
     .carreira_card {
         width: 30vw;
+        height: 28vw;
     }
     .carreira_card_data {
         justify-content: center;
     }
     #next {
-        right: 30vw;
+        right: 28vw;
     }
     #prev {
-        left: 30vw;
+        left: 28vw;
     }
     #prev, #next {
         margin-top: 10vw;
@@ -299,3 +301,4 @@
     }
 
 }
+

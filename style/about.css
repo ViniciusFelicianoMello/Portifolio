@@ -1,18 +1,99 @@
-.sobremim {
-    background: var(--azul-degrade-light);
-}
-
 .sobremim_div {
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
 /* ========== HISTORIA ========== */
+.sobremim_carreira {
+    display: flex;
+}
+.slider {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 30vw;
+    overflow: hidden;
+    top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+.carreira_card {
+    background-color: var(--cor-dois);
+    height: 25vw;
+    width: 18vw;
+    border: 3px solid var(--azul-dois);
+    border-radius: 1em;
+    position: absolute;
+    text-align: justify;
+    transition: 0.5s;
+    top: 1em;
+}
+#next, #prev {
+    position: absolute;
+    color: var(--azul-dois);
+    background-color: transparent;
+    border: none;
+    font-size: 2.5em;
+    font-family: var(--font-graf);
+    font-weight: 400;
+    left: 11vw;
+    cursor: pointer;
+    margin-top: 15vw;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+#next {
+    left: unset;
+    right: 60vw;
+}
+#prev:hover,
+#next:hover{
+    opacity: 1;
+    text-shadow: 0 0 5px var(--cor-tres);
+}
 
+.bullets {
+    display: flex;
+    margin: 0 0 1em 1vw;
+    align-items: center;
+    position: absolute;
+}
 
+.bullet {
+    width: 10px;
+    height: 10px;
+    background-color:var(--azul-quatro);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
 
-/* ========== DESCRIÇÕES ========== */
+.bullet.active {
+    background-color: var(--cor-dois);
+    border: 2px solid var(--azul-quatro);
+}
+
+.carreira_card_data {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 1em;
+    padding-bottom: 1vw;
+    border-bottom: 2px solid var(--azul-dois);
+}
+.carreira_titulo {
+    font-family: var(--font-marker);
+    font-size: 1.5rem;
+}
+.carreira_texto {
+    margin: 0 1vw;
+    font-family: var(--font-paint);
+    font-size: 1vw;
+    font-weight: 400;
+}
+/* ========== DESCRIÇÕES ========== */ 
 .sobremim_desc {
+    display: flex;
+    flex-direction: column;
     margin: 0 10vw 0 0;
     border-left: 0.2rem solid var(--azul-tres);
     padding: 0 0 0 1rem;
@@ -72,7 +153,7 @@
 /* ========== INFOS ========== */
 .sobremim_infos {
     display: flex;
-    gap: 2vw;
+    gap: 1vw;
     margin: 3vw 0 0 0;
 }
 
@@ -142,3 +223,79 @@
 }
 
 
+@media screen and (max-width:600px) {
+     .sobremim_div {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sobremim_desc {
+        padding: 5vw 2vw;
+    }
+
+    .sobremim_desc {
+        align-items: center;
+        border-left: none;
+        margin: 0;
+    }
+
+    .sobremim_desc_texto {
+        height: 30vw;
+    }
+    .sobremim_desc_texto::before {
+        width: 150vw;
+        height: 16vw;
+        left: -20;
+        top: 10%;
+    }
+    .sobremim_desc_texto-sobre {
+        font-size: 2.8vw;
+        width: auto;
+    }
+
+    .sobremim_infos{
+        gap: 4vw;
+    }
+    .sobremim_card {
+        height: 20vw;
+        width: 20vw;
+    }
+    .sobremim_card::before {
+        width: 16vw;
+        height: 40vw;
+        left: 10%;
+        top: -50%;
+    }
+
+
+    .slider {
+        margin: 0vw 0 0 0;
+        width: 100%;
+        top: 0;
+    }
+    .carreira_card {
+        width: 30vw;
+    }
+    .carreira_card_data {
+        justify-content: center;
+    }
+    #next {
+        right: 30vw;
+    }
+    #prev {
+        left: 30vw;
+    }
+    #prev, #next {
+        margin-top: 10vw;
+    }
+    .carreira_titulo {
+        font-size: 0.8rem;
+    }
+    .carreira_img {
+        display: none;
+    }
+    .carreira_texto {
+        font-size: 1.5vw;
+    }
+
+}

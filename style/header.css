@@ -52,7 +52,7 @@
         text-decoration: none;
         font-family: var(--font-paint);
         font-weight: 400;
-        cursor: pointer;
+        cursor: url("..assets/icons/graffitePointer");
         transition: all 0.5s ease;
         position: relative;
         display: inline-block;
@@ -101,7 +101,7 @@
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .cabecalho_img {
         margin-left: 2vw;
     }
@@ -111,6 +111,9 @@
         display: flex; /* aparecer o menu */
         position: relative; /* poscição da lista */
         align-items: center; /* poscição da lista */
+    }
+    .opcoes_rotulo {
+        background-color: var(--azul-dois);
     }
     .cabecalho_menu-hamburguer {
         width: 4.5em; /* tamanho do menu */
@@ -181,5 +184,13 @@
         display: none; /* desaparecer responsivo dextop*/
     }
 /* ============ Menu Hamburuger ============ */ 
+
+    .cabecalho_img {
+    display: none;
+    }
+    .cabecalho {
+        background-color: transparent;
+    }
+
 
 }

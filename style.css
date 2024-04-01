@@ -8,14 +8,11 @@
 
 :root {
     --azul-um: #effbff;
+    --azul-um-um: #c4f1ff;
     --azul-dois: #36cbfd;
     --azul-tres: #1D24CA;
     --azul-quatro: #001d86;
     --azul-cinco: #201658;
-
-    --azul-degrade-light: linear-gradient(to  right, #effbff, #c4f1ff);
-    --azul-degrade-medium: linear-gradient(to  right, #0d1ca2, #6ddbff);
-    --azul-degrade-dark: linear-gradient(to  right, #201658, #001d86);
 
     --cor-dois:#fcf4e1;
     --cor-dois-t:#f0e4c8ce;
@@ -32,11 +29,12 @@
 }
 
 body {
-    background-color: var(--azul-um);
+    background-image: linear-gradient(to right, var(--azul-um), var(--azul-um-um));
     color: var(--azul-quatro);
     font-size: 16px;
     font-weight: 400;
     box-sizing: border-box;
+    cursor: url("assets/icons/graffite.png")
 }
 
 .container {
@@ -45,7 +43,7 @@ body {
 
 .custom-botao {
     text-decoration: none;
-    cursor: pointer;
+    cursor: url("assets/icons/graffitePointer.png");
     transition: all 0.5s ease;
     position: relative;
     display: inline-block;
@@ -66,8 +64,12 @@ body {
     z-index: 1; 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
     .container {
-        height: 120vw;
+        height: 110vw;
+    }
+
+    .titulo {
+        font-size: 3vw;
     }
 }

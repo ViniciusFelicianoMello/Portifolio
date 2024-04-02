@@ -5,6 +5,7 @@
 @import url("style/header.css");
 @import url("style/banner.css");
 @import url("style/about.css");
+@import url("style/skills.css");
 
 :root {
     --azul-um: #effbff;
@@ -12,6 +13,7 @@
     --azul-dois: #36cbfd;
     --azul-tres: #1D24CA;
     --azul-quatro: #001d86;
+    --azul-quatro-quatro: #001d863d;
     --azul-cinco: #201658;
 
     --cor-dois:#fcf4e1;

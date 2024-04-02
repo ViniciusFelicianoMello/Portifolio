@@ -223,6 +223,12 @@
 }
 
 
+@media screen and (max-width:840px) {
+    .sobremim_desc {
+        margin: 0 5vw 0 0
+    }
+}
+
 @media screen and (max-width:600px) {
      .sobremim_div {
         display: grid;

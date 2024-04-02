@@ -85,6 +85,10 @@
     .cabecalho_menu {
         display: none;
     }
+
+    .selecionado {
+        color: red; /* Define a cor que você deseja para a opção do menu selecionada */
+    }
 }
 
 @media screen and (max-width:840px) {

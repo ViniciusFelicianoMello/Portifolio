@@ -106,8 +106,12 @@
 }
 
 @media screen and (max-width:600px) {
+    .cabecalho {
+        background-color: transparent;
+    }
+    
     .cabecalho_img {
-        margin-left: 3vw;
+        display: none;
     }
 
 /* ============ Menu Hamburuger ============ */ 

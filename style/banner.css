@@ -20,8 +20,8 @@
     
     /* ============ Nome Animeção ============ */     
     .apresentacao_nome {
-        width: 15ch;
-        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        width: 11ch;
+        animation: typing 2s steps(15), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         font-family: var(--font-graf);
@@ -164,7 +164,7 @@
         flex-direction: column;
         background-repeat: repeat-y;
         background-size: 200%;
-        height: 120vw;
+        height: 150vw;
     }
 
     .banner_div {
@@ -175,15 +175,16 @@
     }
 
     .banner_apresentacao {
-        margin: 70% 0 0 4vw;
+        margin: 40% 0 0 4vw;
+        scale: 1.8;
     }
 
     .banner_imagem {
-        margin: 10% 0 0 0;
+        margin: 10% 0 0 -20vw;
     }
 
     .banner_img {
-        width: 50vw;
+        width: 90vw;
     }
 }
 

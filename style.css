@@ -68,12 +68,12 @@ body {
 
 @media screen and (max-width:600px) {
     .container {
-        height: 130vw;
+        height: 170vw;
         width: auto;
     }
 
     .titulo {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 

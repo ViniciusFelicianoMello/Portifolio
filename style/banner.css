@@ -33,10 +33,9 @@
         from {
           width: 0
         }
-      }
-          
+      }   
       @keyframes blink {
-        50% {
+        100% {
           border-color: transparent
         }
     /* ============ Nome Animeção ============ */
@@ -82,7 +81,24 @@
     .banner_img {
         top: 40%;
         width: 35vw;
+        animation: imgBanner 1s linear;
+    } .banner_img:hover {
+        animation: imgBanner1 2s infinite;
     }
+
+    @keyframes imgBanner {
+        0% { transform: translateX(100%);}
+        100% { transform: translateX(0%);}
+        0% { opacity: 0;}
+        100% { opacity: 1;}
+    }
+
+    @keyframes imgBanner1 {
+        0% { transform: translateY(0);}
+        40% {transform: translateY(-20px);}
+        60% {transform: translateY(-10px);}
+    }
+
 /* ============ Curriculo Animeção ============ */
     .curriculo_link {
         background-color: var(--cor-tres);
@@ -164,7 +180,7 @@
         flex-direction: column;
         background-repeat: repeat-y;
         background-size: 200%;
-        height: 150vw;
+        height: 170vw;
     }
 
     .banner_div {
@@ -175,7 +191,7 @@
     }
 
     .banner_apresentacao {
-        margin: 40% 0 0 4vw;
+        margin: 70% 0 0 4vw;
         scale: 1.8;
     }
 

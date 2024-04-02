@@ -198,6 +198,7 @@
 
 .info__img{
     margin: 1vw;
+    width: 2vw;
 }
 
 .info_titulo {
@@ -246,16 +247,16 @@
     }
 
     .sobremim_desc_texto {
-        height: 40vw;
+        height: 50vw;
     }
     .sobremim_desc_texto::before {
         width: 150vw;
-        height: 16vw;
+        height: 40vw;
         left: -20;
-        top: 10%;
+        top: 12.2%;
     }
     .sobremim_desc_texto-sobre {
-        font-size: 2.8vw;
+        font-size: 3vw;
         width: auto;
     }
 
@@ -263,26 +264,42 @@
         gap: 4vw;
     }
     .sobremim_card {
-        height: 25vw;
-        width: 25vw;
+        height: 28vw;
+        width: 28vw;
     }
     .sobremim_card::before {
-        width: 16vw;
+        width: 19vw;
         height: 50vw;
-        left: 19%;
-        top: -50%;
+        left: 16%;
+        top: -40%;
     }
+    .info__img{
+        width: 5vw;
+    }
+    
+    .info_titulo {
+        font-size: 7vw;
+    }
+    
+    .info_texto_sub {
+        font-size: 5vw;
+    }
+    
+    .info_texto {
+        font-size: 2.5vw;
+    }
+
 
 
     .slider {
         margin: 0vw 0 0 0;
         width: 100%;
-        height: 40vw;
+        height: 50vw;
         top: 0;
     }
     .carreira_card {
         width: 30vw;
-        height: 33vw;
+        height: 43vw;
     }
     .carreira_card_data {
         justify-content: center;
@@ -297,13 +314,13 @@
         margin-top: 10vw;
     }
     .carreira_titulo {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
     .carreira_img {
         display: none;
     }
     .carreira_texto {
-        font-size: 1.7vw;
+        font-size: 1.8vw;
     }
 
 }

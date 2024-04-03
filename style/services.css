@@ -1,0 +1,186 @@
+.servicos_div {
+    display: flex;
+    margin: 0 10vw 0 10vw;
+    align-items: center;
+    height: 85%;
+    justify-content: space-between;
+}
+/* SERVIÇOS CARD */
+.sevicos_card {
+    display: block;
+    background-color: var(--cor-dois-t);
+    border-radius: 3vw;
+    padding: 2vw;
+    height: 18vw;
+    width: 18vw;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;  
+}
+
+/* SERVICOS CARD HOVER E ANIMAÇÂO */
+.sevicos_card:hover {
+    transition: 0.5s;
+    box-shadow: var(--shadow-hover);
+}
+.sevicos_card:hover .servicos_img {
+    transform: rotateY(180deg);
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+.sevicos_card:hover::before {
+    background: var(--cor-tres);
+}
+.sevicos_card:hover .servicos_mais{
+    scale: 1.1;
+    animation: servicosMais 2s infinite;
+}
+.sevicos_card:hover .servicos_titulo{
+    animation: servicosTit 0.5s linear;
+}
+@keyframes servicosTit {
+    0% { transform: translateY(120%);}
+    100% { transform: translateY(0%);}
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+@keyframes servicosMais {
+    0%, 100% { transform: scale(1);}
+    50% {transform: scale(1.1);}
+}
+
+/* SERVICOS CARD ANIMAÇÂO BORDA */
+.sevicos_card::before {
+    content: "";
+    position: absolute;
+    background: var(--azul-dois);
+    height: 40vw;
+    width: 15vw;
+    top: -40%;
+    left: 16%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+.sevicos_card::after {
+    content: "";
+    position: absolute;
+    background: var(--cor-dois);
+    inset: 3px;
+    border-radius: 3vw;
+}
+
+/* SERVICOS CARD CONTEUDO */
+.servicos_img {
+    position: absolute; 
+    z-index: 1;
+    height: 2vw;
+    width: 2vw;
+    margin-left: 37%;
+}
+
+.servicos_titulo {
+    position: relative;
+    z-index: 1; 
+    color: var(--azul-quatro);
+    font-family: var(--font-marker);
+    font-weight: 400;
+    font-size: 1.8vw;
+    text-align: center;
+    margin-top: 4vw;
+}
+
+.servicos_mais {
+    position: absolute; 
+    z-index: 1; 
+    color: var(--azul-tres);
+    font-family: var(--font-paint);
+    font-size: 1.3vw;
+    margin-top: 7vw;
+}
+
+/* SERVIÇOS POP-UP */
+.servicos_popup {
+    display: grid;
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(10px);
+    padding: 2rem 1rem;
+    place-items: center;
+    z-index: 1000;
+    cursor: auto;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.servicos_popup_conteudo {
+    position: relative;
+    background-color: var(--cor-dois);
+    padding: 4.5rem 2.5rem 2.5rem 2.5rem;
+    border-radius: 2rem;
+    border: 0.4rem solid var(--azul-dois);
+    width: 30rem;
+    height: 35rem;
+}
+.servicos_popup_close {
+    color: var(--azul-tres);
+    font-size: 2rem;
+    background-color: var(--azul-quatro-quatro);
+    border-radius: 50em;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    font-family: var(--font-paint);
+    font-weight: bolder;
+    margin-left: 28rem;
+    margin-top: -3rem;
+    position: absolute;
+    cursor: pointer;
+    z-index: 2000;
+    opacity: 0.7;
+}
+.servicos_popup_close:hover {
+    opacity: 1;
+}
+.servicos_popup_close:active {
+    background-color: var(--azul-quatro);
+    color: var(--cor-tres);
+}
+.servicos_popup_titulo{
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-family: var(--font-marker);
+    margin: 0 0 2.5rem 0;
+}
+.servicos_popup_lista {
+    list-style: none;
+}
+.servicos_popup_item span {
+    color: var(--azul-tres);
+    margin-right: 1rem;
+}
+.servicos_popup_item span, .servicos_popup_item {
+    font-family: var(--font-paint);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* ATIVAR POP-UP */
+.servicos_popup.active-popup {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}

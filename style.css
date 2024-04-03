@@ -6,6 +6,7 @@
 @import url("style/banner.css");
 @import url("style/about.css");
 @import url("style/skills.css");
+@import url("style/services.css");
 
 :root {
     --azul-um: #effbff;
@@ -23,6 +24,8 @@
     --font-marker: "Permanent Marker", cursive;
     --font-paint: "Finger Paint", sans-serif;
     --font-graf: "Rubik Wet Paint", system-ui;
+
+    --shadow-hover: 2px 2px 5px var(--azul-dois), -2px -2px 5px var(--azul-dois);
 }
 
 *{ /*reset margem */
@@ -65,6 +68,7 @@ body {
     position: relative; 
     z-index: 1; 
 }
+
 
 @media screen and (max-width:600px) {
     .container {

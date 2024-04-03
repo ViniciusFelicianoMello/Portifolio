@@ -22,10 +22,23 @@
     border-radius: 10px;
     border: 0.2vw solid var(--azul-dois);
     background-color: var(--cor-dois);
+    color: var(--azul-quatro);
 }
+.habilidades_inicio:hover {
+    border: 0.2vw solid var(--cor-tres);
+    box-shadow: var(--shadow-hover);
+    color: var(--azul-tres);
+    scale: 1.02;
+    transition: 0.5s;
+}
+.habilidades_inicio:hover .habilidades_img {
+    transform: rotateY(180deg);
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+
 .habilidades_titulo {
     margin-right: 5vw;
-    color: var(--azul-quatro);
     font-family: var(--font-marker);
     font-weight: 400;
     font-size: 1.6vw;
@@ -63,11 +76,13 @@
 .habilidade_info_ling {
     width: 6vw;
     height: 6vw;
-    overflow:hidden;
-   margin-top: 2vw  ;
+    margin-top: 2vw  ;
 } .habilidade_info_ling:hover {
     scale: 1.1;
     transition: 0.5s;
+    background: var(--cor-dois);
+    border-radius: 10em;
+    animation: imgBanner1 2s infinite linear;
 }
 .linguagens_img {
     width: 4vw;

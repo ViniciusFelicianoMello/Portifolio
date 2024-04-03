@@ -138,7 +138,7 @@
         z-index: -1;
         background-color: var(--azul-tres);
         border-radius: 5px;
-        box-shadow: 3px 3px 5px var(--cor-dois), -3px -3px 5px var(--cor-dois); 
+        box-shadow: var(--shadow-hover);
         transition: all 0.3s ease;
     }
     .curriculo:hover {

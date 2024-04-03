@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
 <!-- ============ CABEÇALHO ============  -->
 <body>
     <header class="cabecalho">
@@ -44,7 +43,6 @@
 
     </header>
 
-
 <!-- ============ PRINCIPAL ============  -->
     <main class="principal">
 
@@ -75,7 +73,6 @@
                 </div>
             </div>
         </section>
-
 
 <!-- ============ SOBRE MIM ============  -->
         <section class="sobremim container" id="sobremim">
@@ -174,8 +171,8 @@
                 
                     
                     <div class="sobremim_desc">
-                        <div class="sobremim_desc_texto">
-                            <p class="sobremim_desc_texto-sobre show">Sou um desenvolvedor apaixonado por tecnologia, estou em busca de aprender e me desenvolver pessoalmente e profissionalmente, sempre colaborando com a empresa e equipe. Estou iniciando na carreira de programador e tenho conhecimento em <b class="sobremim_destaque">JavaScript, HTML, CSS, C#, Dotnet, Git e Github</b>.<span></span></p>
+                        <div class="sobremim_desc_card">
+                            <p class="sobremim_desc_texto show">Sou um desenvolvedor apaixonado por tecnologia, estou em busca de aprender e me desenvolver pessoalmente e profissionalmente, sempre colaborando com a empresa e equipe. Estou iniciando na carreira de programador e tenho conhecimento em <b class="sobremim_destaque">JavaScript, HTML, CSS, C#, Dotnet, Git e Github</b>.<span></span></p>
                         </div>
 
                         <div class="sobremim_infos">
@@ -200,8 +197,6 @@
                     </div>
                 </div>
         </section>
-
-
 
 <!-- ============ HABILIDADES ============  -->
         <section class="habilidades container" id="habilidades">
@@ -319,13 +314,95 @@
         </section>
 
 <!-- ============ SERVIÇOS ============  -->
+<section class="servicos container" id="servicos">
 
+        <div class="titulo">
+            <h2 class="pagina_titulo">Serviços</h2>
+        </div>
+
+        <div class="servicos_div">
+        <!-- ===== SERVIÇO 1 ===== -->
+            <div class="sevicos_card">
+                <img src="assets/icons/frontendDev.png" alt="Front end Dev" class="servicos_img">
+                <h3 class="servicos_titulo">Web <br> Design</h3>
+                <p class="servicos_descricao"></p>
+                <span class="servicos_mais">Saber mais ></span>              
+
+                <div class="servicos_popup">
+                    <div class="servicos_popup_conteudo">
+                        <p class="servicos_popup_close">X</p>
+                        <h3 class="servicos_popup_titulo">Web designer</h3>
+
+                        <ul class="servicos_popup_lista">
+                            <li class="servicos_popup_item"><span>►</span> Sites responsivos.</li>
+                            <li class="servicos_popup_item"><span>►</span> Interações e animações.</li>
+                            <li class="servicos_popup_item"><span>►</span> Acessibilidade, performance e segurança.</li>
+                            <li class="servicos_popup_item"><span>►</span> Inovação e Criatividade.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SERVIÇO 2 ===== -->
+            <div class="sevicos_card">
+                <img src="assets/icons/backendDev.png" alt="Back end Dev" class="servicos_img">
+                <h3 class="servicos_titulo">Desenvolvimento <br> Backend</h3>
+                <p class="servicos_descricao"></p>
+                <span class="servicos_mais">Saber mais ></span>
+
+                <div class="servicos_popup">
+                    <div class="servicos_popup_conteudo">
+                        <p class="servicos_popup_close">X</p>
+                        <h3 class="servicos_popup_titulo">Desenvolvimento backend</h3>
+
+                        <ul class="servicos_popup_lista">
+                            <li class="servicos_popup_item"><span>► </span> Desempenho e compacto.</li>
+                            <li class="servicos_popup_item"><span>► </span> Manutenção e Atualizações.</li>
+                            <li class="servicos_popup_item"><span>► </span> Segurança e otimização.</li>
+                            <li class="servicos_popup_item"><span>► </span> Automação de produção gráfica.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== SERVIÇO 3 ===== -->
+            <div class="sevicos_card">
+                <img src="assets/icons/graphicD.png" alt="Design grafico" class="servicos_img">
+                <h3 class="servicos_titulo">Designer <br> Gráfico</h3>
+                <p class="servicos_descricao"></p>
+                <span class="servicos_mais">Saber mais ></span>
+
+                <div class="servicos_popup">
+                    <div class="servicos_popup_conteudo">
+                        <p class="servicos_popup_close">X</p>
+                        <h3 class="servicos_popup_titulo">Designer gráfico</h3>
+
+                        <ul class="servicos_popup_lista">
+                            <li class="servicos_popup_item"><span>►</span> Branding e identidade visual.</li>
+                            <li class="servicos_popup_item"><span>►</span> Logos e mockups.</li>
+                            <li class="servicos_popup_item"><span>►</span> Composição Visual.</li>
+                            <li class="servicos_popup_item"><span>►</span> Imagens, fotografias e ilustrações.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</section>
 
 <!-- ============ PROJETOS ============  -->
-
+<section class="projetos container" id="projetos">
+    <div class="titulo">
+        <h2 class="pagina_titulo">Projetos</h2>
+    </div>
+</section>
 
 <!-- ============ CONTATO ============  -->
-
+<section class="contato container" id="contato">
+    <div class="titulo">
+        <h2 class="pagina_titulo">Contate-me</h2>
+    </div>
+</section>
 
 <!-- ============ FOOTER ============  -->
     </main>
@@ -337,6 +414,8 @@
     <script src="javascript/slider.js"></script>
     <script src="javascript/menuHamb.js"></script>
     <script src="javascript/setaMostrarFechar.js"></script>
+    <script src="javascript/popUp.js"></script>
+
 
 </body>
 </html>

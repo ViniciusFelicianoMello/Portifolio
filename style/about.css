@@ -28,6 +28,13 @@
     transition: 0.5s;
     top: 1em;
 }
+
+.carreira_card:hover {
+    scale: 1.05;
+    box-shadow: var(--shadow-hover);
+    border: 3px solid var(--cor-tres);
+    color: var(--azul-tres);
+}
 #next, #prev {
     position: absolute;
     color: var(--azul-dois);
@@ -100,7 +107,7 @@
 }
 
 /* ========== SOBRE ========== */
-.sobremim_desc_texto {
+.sobremim_desc_card {
     display: flex;
     border-radius: 1rem;
     background-color: var(--cor-dois-t);
@@ -110,7 +117,8 @@
     height: 18vw;
     width: auto;
 }
-.sobremim_desc_texto::before {
+
+.sobremim_desc_card::before {
     content: "";
     width: 60vw;
     height: 14vw;
@@ -130,7 +138,7 @@
     }
 }
 
-.sobremim_desc_texto::after {
+.sobremim_desc_card::after {
     content: "";
     position: absolute;
     background: var(--cor-dois);
@@ -138,7 +146,7 @@
     border-radius: 1rem;
 }
 
-.sobremim_desc_texto-sobre {
+.sobremim_desc_texto {
     font-family: var(--font-paint);
     color: var(--azul-quatro);
     font-weight: 400;
@@ -223,6 +231,33 @@
     align-items: center;
 }
 
+/* ANIMACAO DESCRIÇÂO E INFORMAÇÔES HOVER */
+.sobremim_desc_card:hover::before, .sobremim_card:hover::before 
+{
+    background: var(--cor-tres);
+}
+.sobremim_desc_card:hover .sobremim_desc_texto {
+    animation: typingSMT 0.5s steps(40, end);
+    overflow: hidden;
+    color: var(--azul-tres);
+}
+@keyframes typingSMT {
+    0% { transform: translateY(-120%);}
+    100% { transform: translateY(0%);}
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+.sobremim_desc_card:hover, .sobremim_card:hover{
+    box-shadow: var(--shadow-hover);
+}
+.sobremim_card:hover .info__img
+{
+    transform: rotateY(180deg);
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+
+
 
 @media screen and (max-width:840px) {
     .sobremim_desc {
@@ -246,16 +281,16 @@
         margin: 0;
     }
 
-    .sobremim_desc_texto {
+    .sobremim_desc_card {
         height: 50vw;
     }
-    .sobremim_desc_texto::before {
+    .sobremim_desc_card::before {
         width: 150vw;
         height: 40vw;
         left: -20;
         top: 12.2%;
     }
-    .sobremim_desc_texto-sobre {
+    .sobremim_desc_texto {
         font-size: 3vw;
         width: auto;
     }

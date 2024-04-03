@@ -46,7 +46,7 @@
         font-size: 1vw;
         border-radius: 5px;
         padding: 0.8vw 2vw;
-        box-shadow: 3px 3px 5px var(--azul-dois), -3px -3px 5px var(--azul-dois);
+        box-shadow: var(--shadow-hover);
         margin-right: 10vw;
         z-index: 1;
         text-decoration: none;

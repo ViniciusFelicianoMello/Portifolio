@@ -42,10 +42,10 @@
 /* ============ Botão Animação ============ */     
      .contate-me-botao {
         background: var(--azul-quatro);
-        color: var(--azul-um);
-        font-size: 1vw;
+        color: var(--azul-dois);
+        font-size: 1.2vw;
         border-radius: 5px;
-        padding: 0.8vw 2vw;
+        padding: 0.5vw 1vw;
         box-shadow: var(--shadow-hover);
         margin-right: 10vw;
         z-index: 1;
@@ -85,10 +85,6 @@
     .cabecalho_menu {
         display: none;
     }
-
-    .selecionado {
-        color: red; /* Define a cor que você deseja para a opção do menu selecionada */
-    }
 }
 
 @media screen and (max-width:840px) {
@@ -121,7 +117,9 @@
         align-items: center; /* poscição da lista */
     }
     .opcoes_rotulo {
-        background-color: var(--azul-dois);
+        margin: 1em 1em;
+        background-color: var(--azul-tres);
+        border-radius: 300em;
     }
     .cabecalho_menu-hamburguer {
         width: 4.5em; /* tamanho do menu */
@@ -135,7 +133,8 @@
         background-image: url("../assets/hover/menu.png"); /* imagem ativa */
     }
     .opcoes_botao:checked ~ .opcoes_rotulo {
-        background: var(--azul-cinco); /*back ativo*/
+        background: var(--azul-quatro); /*back ativo*/
+        border-radius: 300em;
     }
     .menu_img {
         padding: 0.2em; /*pad imagem*/
@@ -148,10 +147,11 @@
         /* estilização */
         background-color: var(--azul-quatro);
         border-radius: 15px 0 15px 15px;
-        border: 3px solid var(--azul-cinco);
+        border: 3px solid var(--azul-dois);
         text-align: right;
         list-style-type: none;
-        width: 15rem;
+        /* width:100vw; */
+        height: 117vw;
     }
     .opcoes_botao:checked ~.lista_menu {
         display: block; /* aparecer lista */
@@ -171,8 +171,7 @@
         margin: 0.5rem;
     } 
     .contate-menu {
-        border-top: 0.5vw solid var(--azul-cinco);
-        
+        border-top: 0.5vw solid var(--azul-dois);
         padding: 0.5rem 0 0 0.9rem;
     }
     .menu_opcao:active {

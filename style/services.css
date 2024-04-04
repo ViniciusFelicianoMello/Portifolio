@@ -34,9 +34,11 @@
 .sevicos_card:hover .servicos_mais{
     scale: 1.1;
     animation: servicosMais 2s infinite;
+    color: var(--azul-dois);
 }
 .sevicos_card:hover .servicos_titulo{
-    animation: servicosTit 0.5s linear;
+    animation: servicosTit 0.2s linear;
+    color: var(--azul-tres);
 }
 @keyframes servicosTit {
     0% { transform: translateY(120%);}
@@ -113,6 +115,7 @@
     position: fixed;
     inset: 0;
     backdrop-filter: blur(10px);
+    background-color: var(--azul-quatro-t);
     padding: 2rem 1rem;
     place-items: center;
     z-index: 1000;
@@ -131,6 +134,7 @@
     border: 0.4rem solid var(--azul-dois);
     width: 30rem;
     height: 35rem;
+    transform: scale(0.7);
 }
 .servicos_popup_close {
     color: var(--azul-tres);
@@ -183,4 +187,112 @@
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+}
+
+@media screen and (max-width: 600px) {
+    .servicos_div {
+        flex-direction: column;
+        margin: 0 2vw 0 2vw;
+        justify-content: start;
+        gap: 8vw;
+    }
+
+    .sevicos_card {
+        height: 100%;
+        width: 50vw;
+    }
+
+    .sevicos_card::before {
+        height: 90vw;
+        width: 35vw;
+        top: -55%;
+        left: 17%;
+    }
+
+    .servicos_img {
+        height: 5vw;
+        width: 5vw;
+        margin-left: 42%;
+    }
+    
+    .servicos_titulo {
+        font-size: 5vw;
+        margin-top: 8vw;
+    }
+    
+    .servicos_mais {
+        font-size: 3vw;
+        margin-top: 10vw;
+    }
+
+
+    .servicos_popup {
+        display: grid;
+        position: fixed;
+        inset: 0;
+        backdrop-filter: blur(10px);
+        padding: 2rem 1rem;
+        place-items: center;
+        z-index: 1000;
+        cursor: auto;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0.8);
+        transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+    }
+    
+    .servicos_popup_conteudo {
+        position: relative;
+        background-color: var(--cor-dois);
+        padding: 4.5rem 2.5rem 2.5rem 2.5rem;
+        border-radius: 2rem;
+        border: 0.4rem solid var(--azul-dois);
+        width: 30rem;
+        height: 35rem;
+    }
+    .servicos_popup_close {
+        color: var(--azul-tres);
+        font-size: 2rem;
+        background-color: var(--azul-quatro-quatro);
+        border-radius: 50em;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        font-family: var(--font-paint);
+        font-weight: bolder;
+        margin-left: 28rem;
+        margin-top: -3rem;
+        position: absolute;
+        cursor: pointer;
+        z-index: 2000;
+        opacity: 0.7;
+    }
+    .servicos_popup_close:hover {
+        opacity: 1;
+    }
+    .servicos_popup_close:active {
+        background-color: var(--azul-quatro);
+        color: var(--cor-tres);
+    }
+    .servicos_popup_titulo{
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 400;
+        font-family: var(--font-marker);
+        margin: 0 0 2.5rem 0;
+    }
+    .servicos_popup_lista {
+        list-style: none;
+    }
+    .servicos_popup_item span {
+        color: var(--azul-tres);
+        margin-right: 1rem;
+    }
+    .servicos_popup_item span, .servicos_popup_item {
+        font-family: var(--font-paint);
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: flex-start;
+    }
 }

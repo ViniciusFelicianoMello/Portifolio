@@ -237,8 +237,6 @@
     background: var(--cor-tres);
 }
 .sobremim_desc_card:hover .sobremim_desc_texto {
-    animation: typingSMT 0.5s steps(40, end);
-    overflow: hidden;
     color: var(--azul-tres);
 }
 @keyframes typingSMT {

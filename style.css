@@ -11,11 +11,11 @@
 :root {
     --azul-um: #effbff;
     --azul-um-um: #c4f1ff;
-    --azul-dois: #36cbfd;
-    --azul-tres: #1D24CA;
+    --azul-dois: #1dddff;
+    --azul-tres: #006aff;
+    --azul-img: #1D24CA;
     --azul-quatro: #001d86;
-    --azul-quatro-quatro: #001d863d;
-    --azul-cinco: #201658;
+    --azul-quatro-t: #001d8672;
 
     --cor-dois:#fcf4e1;
     --cor-dois-t:#f0e4c8ce;
@@ -25,7 +25,7 @@
     --font-paint: "Finger Paint", sans-serif;
     --font-graf: "Rubik Wet Paint", system-ui;
 
-    --shadow-hover: 2px 2px 5px var(--azul-dois), -2px -2px 5px var(--azul-dois);
+    --shadow-hover: 0px 0px 10px var(--azul-dois), 0 0 10px var(--azul-dois);
 }
 
 *{ /*reset margem */

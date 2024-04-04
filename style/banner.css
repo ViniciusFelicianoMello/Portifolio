@@ -1,8 +1,6 @@
 @media screen and (max-width: 10000px) {
     .banner {
-        background-image: url("../assets/Bricks.png");
-        background-repeat: repeat;
-        background-size: contain;
+        background: linear-gradient(to right, var(--azul-tres), var(--azul-dois));
         width: 100%;
         height: 50vw;
     }
@@ -10,6 +8,10 @@
     .banner_div {
         display: grid;
         grid-template-columns: 50% 50%;
+        height: 100%;
+        background-image: url("../assets/Bricks.png");
+        background-repeat: repeat;
+        background-size:cover;
     }
     .banner_apresentacao {
         margin: 40% 0 0 10vw;
@@ -26,9 +28,9 @@
         overflow: hidden;
         font-family: var(--font-graf);
         font-size: 6vw;
-        color: var(--azul-tres);
+        color: var(--azul-quatro);
         font-weight: 400;
-        text-shadow: 2px 4px 2px var(--cor-dois), -2px -2px 4px var(--cor-tres);
+        text-shadow: 2px 2px 5px var(--cor-dois), -2px -2px 5px var(--cor-dois);
     } @keyframes typing {
         from {
           width: 0
@@ -49,28 +51,40 @@
         color: var(--azul-um);
         font-size: 1.5vw;
         font-weight: 400;
-        text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-dois);
+        text-shadow: 1px 1px 1px var(--azul-img), -1px -1px 1px var(--azul-img);
     }
     .apresentacao_sub {
         font-family: var(--font-graf);
-        color: var(--azul-dois);
+        color: var(--azul-um);
         font-size: 1.9vw;
         font-weight: 400;
-        text-shadow: 2px 3px 2px var(--azul-tres), -2px -2px 2px var(--azul-tres);
+        text-shadow: 1px 1px 1px var(--azul-img), -1px -1px 1px var(--azul-img);
     }
     
     .banner_links {
+        display: flex;
         margin: 1vw;
         text-align: center;
+        justify-content: center;
     }
     
     .link_img {
         margin-left: 2vw;
         display: inline-block;
+        background-color: var(--azul-quatro);
+        border-radius: 10em;
+        
+        padding: 0.5vw;
+        width: 2.2vw;
+        height: 2.2vw;
     }
     .link_img:hover, .link_img:active {
         transform: scale(1.2);
         transition: transform 0.3s;
+    }
+    .img_link {
+        width: 2vw;
+        margin-top: 0.1vw;
     }
     
     .banner_imagem {
@@ -100,27 +114,9 @@
     }
 
 /* ============ Curriculo Animeção ============ */
-    .curriculo_link {
-        background-color: var(--cor-tres);
-        color: var(--azul-quatro);
-        font-weight: bolder;
-        font-size: 0.8vw;
-        border-radius: 5px;
-        border: none;
-        padding: 0.4vw;
-        bottom: 0.8rem;
-        margin-left: 2vw;
-        display: inline-block;
-        text-decoration: none;
-        font-family: var(--font-paint);
-        font-weight: 400;
-        cursor: pointer;
-        position: relative;
-        display: inline-block;
-    } 
     .curriculo {
         margin-left: 9vw;
-        color: var(--azul-quatro);
+        color: var(--azul-tres);
         background-color: var(--cor-tres);
         text-shadow: none;
         text-decoration: none;
@@ -138,7 +134,7 @@
         z-index: -1;
         background-color: var(--azul-tres);
         border-radius: 5px;
-        box-shadow: var(--shadow-hover);
+        box-shadow: 2px 2px 5px var(--cor-dois), -2px -2px 5px var(--cor-dois);
         transition: all 0.3s ease;
     }
     .curriculo:hover {
@@ -155,7 +151,7 @@
 
 }
 
-@media screen and (max-width:840px) {
+/* @media screen and (max-width:840px) {
     .banner_apresentacao {
         margin: 40% 0 0 7vw;
     }
@@ -172,35 +168,60 @@
     .banner_imagem {
         margin: 24% 0 0 8vw
     }
-}
+} */
 
 @media screen and (max-width:600px) {
     .banner {
         display: flex;
         flex-direction: column;
-        background-repeat: repeat-y;
-        background-size: 200%;
         height: 170vw;
     }
-
     .banner_div {
         display: flex;
         flex-direction: column;
-        width: 50%;
-        margin: 0 25%;
+        padding: 0 25%;
+        background-repeat: repeat;
     }
-
     .banner_apresentacao {
         margin: 70% 0 0 4vw;
         scale: 1.8;
     }
 
+    
+    .banner_links {
+        display: flex;
+        margin: 1vw;
+        text-align: center;
+        justify-content: center;
+    } 
+    .link_img {
+        padding: 1vw;
+        width: 2.2vw;
+        height: 2.2vw;
+    }
+    .link_img {
+        margin-bottom: 1vw;
+        padding: 1vw 1.8vw 2vw 1vw;
+    }
+    .img_link {
+        position: absolute;
+        margin-left: -1vw;
+        width: 3vw;
+        height: 3vw;
+    }
+
     .banner_imagem {
         margin: 10% 0 0 -20vw;
     }
-
     .banner_img {
         width: 90vw;
+        margin-top: 5vw;
+    }
+
+    .curriculo {
+        scale: 2;
+        margin-left: 12vw;
+        margin-bottom: 1vw;
     }
 }
 

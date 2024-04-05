@@ -9,9 +9,10 @@
         display: grid;
         grid-template-columns: 50% 50%;
         height: 100%;
-        background-image: url("../assets/Bricks.png");
+        /* background-image: url("../assets/Bricks.png");
         background-repeat: repeat;
-        background-size:cover;
+        background-size:cover; */
+        overflow: hidden;
     }
     .banner_apresentacao {
         margin: 40% 0 0 10vw;
@@ -26,7 +27,7 @@
         animation: typing 2s steps(15), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
-        font-family: var(--font-graf);
+        font-family: var(--font-um);
         font-size: 6vw;
         color: var(--azul-quatro);
         font-weight: 400;
@@ -47,14 +48,14 @@
         text-shadow: 2px 2px 2px var(--azul-dois), -2px -2px 2px var(--azul-dois);
     }
     .apresentcao_ola {
-        font-family: var(--font-graf);
+        font-family: var(--font-um);
         color: var(--azul-um);
         font-size: 1.5vw;
         font-weight: 400;
         text-shadow: 1px 1px 1px var(--azul-img), -1px -1px 1px var(--azul-img);
     }
     .apresentacao_sub {
-        font-family: var(--font-graf);
+        font-family: var(--font-um);
         color: var(--azul-um);
         font-size: 1.9vw;
         font-weight: 400;
@@ -147,8 +148,6 @@
     .curriculo:active {
         top: 2px;
     }
-/* ============ Curriculo Animeção ============ */
-
 }
 
 /* @media screen and (max-width:840px) {

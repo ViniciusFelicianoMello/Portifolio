@@ -122,11 +122,12 @@
         border-radius: 300em;
     }
     .cabecalho_menu-hamburguer {
-        width: 4.5em; /* tamanho do menu */
-        height: 4em; /* tamanho do menu */
+        width: 10vw; /* tamanho do menu */
+        height: 10vw; /* tamanho do menu */
         background-image: url("../assets/icons/menu.png"); /* imagem do menu */
         background-position: center; /* posição */
         background-repeat: no-repeat; /* não repetir img */
+        background-size: 60%;
         display: inline-block; /* posicionamento inline */
     }
     .opcoes_botao:checked ~ .opcoes_rotulo > .cabecalho_menu-hamburguer {
@@ -145,13 +146,15 @@
         top: 100%; /* distancia do topo */
         right: 0; /* distancia a direita */
         /* estilização */
-        background-color: var(--azul-quatro);
+        background-color: var(--azul-quatro-t);
+        backdrop-filter: blur(10px);
         border-radius: 15px 0 15px 15px;
         border: 3px solid var(--azul-dois);
         text-align: right;
         list-style-type: none;
         /* width:100vw; */
         height: 117vw;
+        width: 80vw;
     }
     .opcoes_botao:checked ~.lista_menu {
         display: block; /* aparecer lista */
@@ -180,11 +183,11 @@
     }
 
     .click {
-        padding-left: 4em;
+        padding-left: 45vw;
     } .click1 {
-        padding-left: 2.5em;
+        padding-left: 28vw;
     } .click2 {
-        padding-left: 1.1em;
+        padding-left: 13vw;
     }
 
     .opcoes, .contate-me-botao {

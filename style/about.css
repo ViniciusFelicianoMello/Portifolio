@@ -41,7 +41,7 @@
     background-color: transparent;
     border: none;
     font-size: 2.5em;
-    font-family: var(--font-graf);
+    font-family: var(--font-um);
     font-weight: 400;
     left: 11vw;
     cursor: pointer;
@@ -213,7 +213,7 @@
     color: var(--azul-tres);
     font-size: 2.5vw;
     font-weight: 400;
-    font-family: var(--font-graf);
+    font-family: var(--font-um);
 }
 
 .info_texto_sub {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <!-- ============ CABEÇALHO ============  -->
@@ -23,7 +23,7 @@
         </div>
 
         <div class="contate-me">
-            <a href="#contato" class="contate-me-botao">Contate-me</a>
+            <a href="#contact" class="contate-me-botao">Contate-me</a>
         </div>
 
         <div class=cabecalho_menu>
@@ -37,7 +37,7 @@
                 <li class="lista_menu_lista"><a href="#habilidades" class="menu_opcao click2">Habilidades</a></li>
                 <li class="lista_menu_lista"><a href="#servicos" class="menu_opcao click1">Serviços</a></li>
                 <li class="lista_menu_lista"><a href="#projetos" class="menu_opcao click1">Projetos</a></li>
-                <li class="lista_menu_lista contate-menu"><a href="#contato" class="menu_opcao contate-menu">Contate-me</a></li>          
+                <li class="lista_menu_lista contate-menu"><a href="#contact" class="menu_opcao contate-menu">Contate-me</a></li>          
             </ul>
         </div>
 
@@ -51,19 +51,19 @@
             <div class="banner_div">
 
                 <div class="banner_apresentacao">
-                    <p class="apresentcao_ola">Olá, eu sou<a href="https://curriculum-vitae-vinicius.vercel.app/" target="_blank" class="custom-botao curriculo">Curriculo</a></p>
+                    <p class="apresentcao_ola">Olá 👋🏼, eu sou<a href="https://curriculum-vitae-vinicius.vercel.app/" target="_blank" class="custom-botao curriculo">Curriculo</a></p>
                     <h1 class="apresentacao_nome">Vinicius Mello<b class="ponto">.</b></h1>
                     <h2 class="apresentacao_sub">Desenvolvedor Front-End e Back-End</h2>
 
                     <div class="banner_links">
                         <a href="https://github.com/ViniciusFelicianoMello" target="_blank" class="link_img">
-                            <img src="assets/icons/github1.png" alt="Github" class="img_link">                        
+                            <img src="assets/icons/github.png" alt="Github" class="img_link">                        
                         </a>
                         <a href="https://www.linkedin.com/in/vinicius-feliciano-mello/" target="_blank" class="link_img">
                             <img src="assets/icons/linkedin.png" alt="Linkedin" class="img_link">                     
                         </a>
                         <a href="https://www.instagram.com/viinifeliciano/" target="_blank" class="link_img">
-                            <img src="assets/icons/instagram1.png" alt="Instagram" class="img_link">    
+                            <img src="assets/icons/instagram.png" alt="Instagram" class="img_link">    
                         </a>
                     </div>
                 </div>
@@ -398,15 +398,72 @@
 </section>
 
 <!-- ============ CONTATO ============  -->
-<section class="contato container" id="contato">
+<section class="contact container" id="contact">
     <div class="titulo">
         <h2 class="pagina_titulo">Contate-me</h2>
+    </div>
+
+    <div class="contact_div">
+        <!-- ===== LADO DIREITO IMAGEM ===== -->
+        <div class="contact_infos">
+            <img src="assets/VFM LOGO.png" alt="" class="contact_img">
+            <!-- ====== BOX PHONE ====== -->
+            <a href="thankspage.html" class="contact_info_box">
+            
+                    <img src="assets/icons/phone.png" alt="telefone" class="contact_info_img">
+                    <div class="contact_info_info">
+                        <h3 class="contact_info_write">Me escreva <span>></span></h3>
+                        <p class="contact_info_text">(11) 9 7174-7781</p>
+                    </div>
+              
+            </a>
+            
+        </div>
+
+        <!-- ===== FORMULARIO ====== -->
+        <form <form action="https://formsubmit.co/viniciusfelicianomello@hotmail.com" method="POST"  class="contact_form" id="contact_form">
+            <div class="contact_form_grupo">
+                <h3 class="contact_form_title">Envie um email !</h3>
+                <!-- ===== FORM BOX ===== -->
+                <div class="contact_form_ne">
+                    <div class="contact_form_box">
+                        <label for="name" class="contact_label">Nome</label>
+                        <input type="text" name="name" class="contact_form_input form_esq" id="name" required placeholder="Nome">
+                    </div>
+                    <!-- ===== FORM BOX ===== -->
+                    <div class="contact_form_box">
+                        <label for="email" class="contact_label">Email</label>
+                        <input type="text" name="email" class="contact_form_input form_dir" id="email" required placeholder="Email">
+                    </div>
+                </div>
+                <!-- ===== FORM BOX ===== -->
+                <div class="contact_form_box">
+                    <label for="subject" class="contact_label">Assunto</label>
+                    <input type="text" name="subject" class="contact_form_input" id="subject" required placeholder="Assunto">
+                </div>
+                <!-- ===== FORM BOX ===== -->
+                <div class="contact_form_box contact_area">
+                    <label for="message" class="contact_label">Mensagem</label>
+                    <textarea name="message" id="message" class="contact_form_input" required placeholder="Escreva sua mensagem aqui"></textarea>
+                </div>
+
+                <p class="contact_message" id="contact_message"></p>
+
+                <button type="submit" class="contact_button">
+                    <img src="assets/icons/send.png" alt="enviar" class="contact_button_img"> Enviar
+                </button> 
+            </div>
+            <!-- ===== button ===== -->
+            
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://portifolio-vinicius-mello.vercel.app//thankspage.html">
+            <input type="hidden" name="_autoresponse" value="Obrigado por me enviar uma mensagem, Por favor, aguarde que eu logo respondorei para você, se quiser mais velocidade, envie uma mensagem por whatsapp.">
+        </form>
     </div>
 </section>
 
 <!-- ============ FOOTER ============  -->
     </main>
-
 
 
     <script src="javascript/contador.js"></script>
@@ -415,7 +472,5 @@
     <script src="javascript/menuHamb.js"></script>
     <script src="javascript/setaMostrarFechar.js"></script>
     <script src="javascript/popUp.js"></script>
-
-
 </body>
 </html>

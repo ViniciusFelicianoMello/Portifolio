@@ -1,0 +1,98 @@
+.thankspage {
+    background-image: url("../assets/city.png");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.thankspage_box {
+    height: 25em;
+    width: 40em;
+    border: 5px solid var(--azul-dois);
+    padding: 1em;
+    background-color: var(--cor-dois-t);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px var(--azul-quatro), -2px -2px 10px var(--azul-quatro);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    animation: cima 1s linear;
+}
+@keyframes cima {
+    0% { transform: translateY(-100%);}
+    100% { transform: translateY(0%);}
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+.thankspage_box:hover {
+    box-shadow: 2px 2px 10px var(--azul-dois), -2px -2px 10px var(--azul-dois);
+    border: 5px solid var(--cor-dois);
+}
+
+.thankspage_titulo {
+    font-family: var(--font-um);
+    font-weight: 400;
+    font-size: 5em;
+    color: var(--azul-tres);
+    text-shadow: 0 0 8px var(--cor-tres);
+    margin-top: 0.8em;
+}
+
+.thanskpage_text {
+    font-family: var(--font-paint);
+    font-weight: 400;
+    font-size: 1.2em;
+    color: var(--azul-quatro);
+    margin-top: 1em;
+}
+
+.thankspage_links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.thankspage_links_ancora {
+    border: 3px solid var(--azul-tres);
+    padding: 0.5em;
+    border-radius: 15em;
+    display: flex;
+    justify-content: center;
+    width: 11em;
+    text-decoration: none;
+    color: var(--azul-tres);
+    font-size: var(--font-marker);
+}
+
+.thankspage_img {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.thankspage_links_text {
+    font-family: var(--font-marker);
+    font-weight: 400;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.thankspage_links_ancora:hover {
+    border: 3px solid var(--cor-tres);
+    color: var(--cor-tres);
+    background-color: var(--azul-tres);
+}
+.thankspage_links_ancora:hover .thankspage_img {
+    transform: rotateY(180deg);
+    transform-origin: center center;
+    transition: transform 0.5s ease;
+}
+
+@media screen and (max-width:600px) {
+    .thankspage_box {
+        scale: 0.7;
+    }
+}

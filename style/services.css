@@ -232,7 +232,7 @@
     
     .servicos_popup_conteudo {
         position: absolute;
-        scale: 0.5;
+        scale: 0.75;
     }
     .servicos_popup_close {
         color: var(--azul-tres);

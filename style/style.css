@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Rubik+Wet+Paint&display=swap');
+
+@import url("header.css");
+@import url("banner.css");
+@import url("about.css");
+@import url("skills.css");
+@import url("services.css");
+@import url("projetos.css");
+@import url("contato.css");
+@import url("thankspage.css");
+
+:root {
+    --azul-um: #d9f4ff;
+    --azul-um-um: #90dfff;
+    --azul-dois: #00d9ff;
+    --azul-tres: #006aff;
+    --azul-img: #1D24CA;
+    --azul-quatro: #001d86;
+    --azul-quatro-t: #001d8672;
+
+    --cor-dois:#fcf7e1;
+    --cor-dois-t:#f0e4c886;
+    --cor-tres: #ffdd00;
+
+    --font-marker: "Permanent Marker", cursive;
+    --font-paint: "Finger Paint", sans-serif;
+    --font-um: "Rubik Wet Paint", system-ui;
+
+    --shadow-hover: 0px 0px 10px var(--azul-dois), 0 0 10px var(--azul-dois);
+}
+
+*{ /*reset margem */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(to right, var(--azul-um), var(--azul-um-um));
+    color: var(--azul-quatro);
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+    cursor: url("assets/icons/graffite.png")
+}
+
+.container {
+    height: 43vw;
+}
+
+.custom-botao {
+    text-decoration: none;
+    cursor: url("assets/icons/graffitePointer.png");
+    transition: all 0.5s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo {
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: var(--font-marker);
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: var(--azul-tres);
+}
+
+.show {
+    position: relative; 
+    z-index: 1; 
+}
+
+
+@media screen and (max-width:600px) {
+    .container {
+        height: 170vw;
+        width: auto;
+    }
+
+    .titulo {
+        font-size: 4vw;
+    }
+}
+

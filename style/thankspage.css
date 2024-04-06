@@ -32,6 +32,28 @@
     border: 5px solid var(--cor-dois);
 }
 
+.thankspage_voltar {
+    display: block;
+    text-align: center;
+    font-family: var(--font-um);
+    color: var(--azul-tres);
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--azul-quatro-t);
+    border-radius: 50em;
+    width: 3rem;
+    height: 3rem;
+    text-decoration: none;
+    padding: 0 0.1em 0.1em 0.1em;
+    opacity: 0.7;
+}
+.thankspage_voltar:hover {
+    opacity: 1;
+}
+.thankspage_voltar:active {
+    background-color: var(--azul-quatro);
+    color: var(--cor-tres);
+}
 .thankspage_titulo {
     font-family: var(--font-um);
     font-weight: 400;

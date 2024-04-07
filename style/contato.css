@@ -1,11 +1,12 @@
 .contact_div {
     display: grid;
     grid-template-columns: 50% 50%;
-    margin: 0 10vw;
+    overflow: hidden;
 }
 /* Lado direito */
 .contact_infos {
     height: 100%;
+    margin: 0 0 0 10vw;
 }
 /* Imagem */
 .contact_img {
@@ -98,6 +99,8 @@
     align-items: center;
     display: flex;
     background-color: var(--cor-dois);
+    scale: 0.85;
+    margin: 0 6vw 0 0;
 }
 .contact_form_grupo {
     width: 30vw;

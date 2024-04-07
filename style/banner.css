@@ -72,7 +72,7 @@
     .link_img {
         margin-left: 2vw;
         display: inline-block;
-        background-color: var(--azul-quatro);
+        background-color: var(--azul-tres);
         border-radius: 10em;
         
         padding: 0.5vw;
@@ -96,11 +96,9 @@
     .banner_img {
         top: 40%;
         width: 35vw;
-        animation: imgBanner 1s linear;
-    } .banner_img:hover {
-        animation: imgBanner1 2s infinite;
+        /* animation: imgBanner 1s linear; */
+        animation: imgBanner1 2s infinite linear;
     }
-
     @keyframes imgBanner {
         0% { transform: translateX(100%);}
         100% { transform: translateX(0%);}

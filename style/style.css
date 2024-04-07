@@ -14,21 +14,37 @@
 :root {
     --azul-um: #d9f4ff;
     --azul-um-um: #90dfff;
-    --azul-dois: #00d9ff;
+    --azul-dois: #3adbff;
     --azul-tres: #006aff;
     --azul-img: #1D24CA;
     --azul-quatro: #001d86;
-    --azul-quatro-t: #001d8672;
+    --azul-quatro-t: #001d8648;
 
     --cor-dois:#fcf7e1;
-    --cor-dois-t:#f0e4c886;
+    --cor-dois-t:#fcf7e186;
     --cor-tres: #ffdd00;
 
     --font-marker: "Permanent Marker", cursive;
     --font-paint: "Finger Paint", sans-serif;
     --font-um: "Rubik Wet Paint", system-ui;
 
-    --shadow-hover: 0px 0px 10px var(--azul-dois), 0 0 10px var(--azul-dois);
+    --shadow-hover: 0px 0px 4px var(--azul-dois), 0 0 4px var(--azul-dois);
+
+    --transition-duration: 1s;
+}
+
+[data-theme="dark"] {
+    --azul-um: #102367;
+    --azul-um-um: #1a2448;
+    --azul-dois: #1c4a7b;
+    --azul-tres: #006aff;
+    --azul-img: #1D24CA;
+    --azul-quatro: #d9f4ff;
+    --azul-quatro-t: #d9f4ff48;
+
+    --cor-dois:#26397a;
+    --cor-dois-t:#001d8648;
+    --cor-tres: #ffdd00;
 }
 
 *{ /*reset margem */
@@ -42,11 +58,13 @@ body {
     font-size: 16px;
     font-weight: 400;
     box-sizing: border-box;
-    cursor: url("assets/icons/graffite.png")
+    cursor: url("assets/icons/graffite.png");
+    transition: 0.3s;
 }
 
 .container {
     height: 43vw;
+    overflow: hidden;
 }
 
 .custom-botao {

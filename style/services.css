@@ -135,6 +135,7 @@
     width: 30rem;
     height: 35rem;
     transform: scale(0.7);
+    margin-top: -5em;
 }
 .servicos_popup_close {
     color: var(--azul-tres);

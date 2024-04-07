@@ -20,11 +20,17 @@
             <a href="#habilidades" class="opcao">Habilidades</a>
             <a href="#servicos" class="opcao">Serviços</a>
             <a href="#projetos" class="opcao">Projetos</a>
+            <a href="#contact" class="opcao">Contate-me</a>
         </div>
 
-        <div class="contate-me">
-            <a href="#contact" class="contate-me-botao">Contate-me</a>
-        </div>
+        <!-- <div class="contate-me"> -->
+            <!-- <span class="contate-me-botao">DKMODE</span> -->
+            <div class="dark-mode-but">
+                <input id="dark-mode" name="dark-mode" class="dark_chk" type="checkbox" role="switch" value="on">
+                <label for="dark-mode" class="dark_label"></label>
+                <div class="dark-ball"></div>
+            </div>
+        <!-- </div> -->
 
         <div class=cabecalho_menu>
             <input type="checkbox" id="menu" class="opcoes_botao">
@@ -37,7 +43,7 @@
                 <li class="lista_menu_lista"><a href="#habilidades" class="menu_opcao click2">Habilidades</a></li>
                 <li class="lista_menu_lista"><a href="#servicos" class="menu_opcao click1">Serviços</a></li>
                 <li class="lista_menu_lista"><a href="#projetos" class="menu_opcao click1">Projetos</a></li>
-                <li class="lista_menu_lista contate-menu"><a href="#contact" class="menu_opcao contate-menu">Contate-me</a></li>          
+                <li class="lista_menu_lista contate-menu"><a href="#contact" class="menu_opcao click2 contate-menu">Contate-me</a></li>          
             </ul>
         </div>
 
@@ -472,5 +478,6 @@
     <script src="javascript/menuHamb.js"></script>
     <script src="javascript/setaMostrarFechar.js"></script>
     <script src="javascript/popUp.js"></script>
+    <script src="javascript/darkmode.js"></script>
 </body>
 </html>

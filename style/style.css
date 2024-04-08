@@ -24,6 +24,8 @@
     --cor-dois-t:#fcf7e186;
     --cor-tres: #ffdd00;
 
+    --cor-overlay: #000827b3;
+
     --font-marker: "Permanent Marker", cursive;
     --font-paint: "Finger Paint", sans-serif;
     --font-um: "Rubik Wet Paint", system-ui;
@@ -36,7 +38,7 @@
 [data-theme="dark"] {
     --azul-um: #102367;
     --azul-um-um: #1a2448;
-    --azul-dois: #1c4a7b;
+    --azul-dois: #1062ae;
     --azul-tres: #006aff;
     --azul-img: #1D24CA;
     --azul-quatro: #d9f4ff;
@@ -45,6 +47,8 @@
     --cor-dois:#26397a;
     --cor-dois-t:#001d8648;
     --cor-tres: #ffdd00;
+
+    --cor-overlay: #d9f4ffb3;
 }
 
 *{ /*reset margem */
@@ -95,6 +99,7 @@ body {
     .container {
         height: 170vw;
         width: auto;
+        overflow: scroll;
     }
 
     .titulo {

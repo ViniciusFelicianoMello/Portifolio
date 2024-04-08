@@ -195,12 +195,13 @@
     .contact_div {
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
     }
     .contact_form {
-        width: 96vw;
-        margin-left: -8vw;
+        width: 110vw;
+        margin-left: -5vw;
     }
-    .contact_form_grupo {
+    .contact_form_grupo {   
         width: auto;
         height: 100%;
     }  

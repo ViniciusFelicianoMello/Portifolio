@@ -207,7 +207,7 @@
         text-align: right;
         list-style-type: none;
         /* width:100vw; */
-        height: 117vw;
+        height: 95vh;
         width: 80vw;
         z-index: 1000;
     }
@@ -228,10 +228,12 @@
         font-size: 2rem;
         text-decoration: none;
         margin: 0.5rem;
+        text-shadow: 1px 1px 2px var(--azul-quatro), -1px -1px 2px var(--azul-quatro);
     } 
     .contate-menu {
         border-top: 0.5vw solid var(--azul-tres);
         padding: 0.5rem 0 0 0.9rem;
+        white-space: nowrap;
     }
     .menu_opcao:active {
         color: var(--cor-dois);
@@ -259,7 +261,6 @@
   
   .dark_chk {
     width: 11vw;
-    opacity: 1;
     left: 4vw;
     height: 3vw;
     z-index: 50;

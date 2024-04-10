@@ -150,6 +150,34 @@
     }
 } */
 
+
+@media screen and (max-width:1024px) {
+
+    .cabecalho_img {
+        width: 5vw;
+        margin-left: 2vw;
+    }
+    
+    .opcoes {
+        align-items: center;
+    }
+    
+    .opcao{
+        align-items: center;
+        font-size: 1.7vw;
+        margin: 0 1vw;
+        font-family: var(--font-paint);
+        font-weight: 400;
+    } 
+
+    .dark-mode-but {
+        margin-right: 0;
+      }
+      .dark_chk {
+        right: 1vw;
+    }
+}
+ 
 @media screen and (max-width:600px) {
     .cabecalho {
         background-color: transparent;

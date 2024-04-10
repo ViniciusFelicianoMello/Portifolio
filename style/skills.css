@@ -53,9 +53,18 @@
 .central {
     margin: 0 5vw;
 }
-.habilidades_seta, .habilidades_img {
+.habilidades_seta {
     width: 30px;
     height: 30px;
+}
+.habilidades_img {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    margin: -2vw 0 0 -23vw;
+    background-color: var(--cor-dois);
+    border-radius: 100%;
+    border: 3px solid var(--azul-dois);
 }
 
 

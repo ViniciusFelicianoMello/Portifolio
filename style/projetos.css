@@ -97,4 +97,13 @@
         width: 100%;
         margin-top: -21vw;
     }
+
+    .projetos_titulo {
+        font-size: 10vw;
+        margin-top: 2em;
+    }
+    .projetos_texto {
+        font-size: 4vw;
+    }
+    
 }

@@ -72,7 +72,7 @@
     .link_img {
         margin-left: 2vw;
         display: inline-block;
-        background-color: var(--azul-tres);
+        background-color: var(--cor-tres);
         border-radius: 10em;
         
         padding: 0.5vw;
@@ -164,6 +164,24 @@
 
     .banner_imagem {
         margin: 24% 0 0 8vw
+    }
+} */
+
+/* @media screen and (max-width:1024px) {
+    .banner {
+        height: 80vw;
+    }
+    .banner_apresentacao {
+        scale: 1.5;
+        margin: 60% 0 0 15vw;
+        text-align: left;
+        transform: rotate(-5deg); 
+        width: 100;
+    }
+    .banner_img {
+        scale: 1.5;
+        margin: 26vw 0;
+        width: 35vw;
     }
 } */
 

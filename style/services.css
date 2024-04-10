@@ -82,11 +82,11 @@
 
 /* SERVICOS CARD CONTEUDO */
 .servicos_img {
-    position: absolute; 
+    position: relative; 
     z-index: 1;
-    height: 2vw;
-    width: 2vw;
-    margin-left: 37%;
+    height: 4vw;
+    width: 4vw;
+    margin-left: 40%;
 }
 
 .servicos_titulo {
@@ -97,7 +97,7 @@
     font-weight: 400;
     font-size: 1.8vw;
     text-align: center;
-    margin-top: 4vw;
+    margin-top: 1vw;
 }
 
 .servicos_mais {
@@ -106,7 +106,7 @@
     color: var(--azul-tres);
     font-family: var(--font-paint);
     font-size: 1.3vw;
-    margin-top: 7vw;
+    margin-top: 5vw;
 }
 
 /* SERVIÇOS POP-UP */
@@ -234,50 +234,5 @@
     .servicos_popup_conteudo {
         position: absolute;
         scale: 0.75;
-    }
-    .servicos_popup_close {
-        color: var(--azul-tres);
-        font-size: 2rem;
-        background-color: var(--azul-quatro-quatro);
-        border-radius: 50em;
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        font-family: var(--font-paint);
-        font-weight: bolder;
-        margin-left: 28rem;
-        margin-top: -3rem;
-        position: absolute;
-        cursor: pointer;
-        z-index: 2000;
-        opacity: 0.7;
-    }
-    .servicos_popup_close:hover {
-        opacity: 1;
-    }
-    .servicos_popup_close:active {
-        background-color: var(--azul-quatro);
-        color: var(--cor-tres);
-    }
-    .servicos_popup_titulo{
-        text-align: center;
-        font-size: 2.3rem;
-        font-weight: 400;
-        font-family: var(--font-marker);
-        margin: 0 0 2.5rem 0;
-    }
-    .servicos_popup_lista {
-        list-style: none;
-    }
-    .servicos_popup_item span {
-        color: var(--azul-tres);
-        margin-right: 1rem;
-    }
-    .servicos_popup_item span, .servicos_popup_item {
-        font-family: var(--font-paint);
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: flex-start;
     }
 }

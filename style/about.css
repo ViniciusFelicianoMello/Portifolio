@@ -7,6 +7,16 @@
 .sobremim_carreira {
     display: flex;
 }
+
+.carreira_img {
+    width: 4.5vw;
+    height: 4.5vw;
+    position: absolute;
+    margin: -2vw 0 0 14vw;
+    background-color: var(--cor-dois);
+    border-radius: 100%;
+    border: 3px solid var(--azul-dois);
+}
 .slider {
     text-align: center;
     position: relative;
@@ -206,8 +216,9 @@
 }
 
 .info__img{
+    position: absolute;
     margin: 1vw;
-    width: 2vw;
+    width: 3vw;
 }
 
 .info_titulo {
@@ -307,10 +318,6 @@
         left: 16%;
         top: -40%;
     }
-    .info__img{
-        width: 5vw;
-    }
-    
     .info_titulo {
         font-size: 7vw;
     }

@@ -105,7 +105,7 @@
 .thankspage_links_ancora:hover {
     border: 3px solid var(--cor-tres);
     color: var(--cor-tres);
-    background-color: var(--azul-tres);
+    background-color: var(--azul-dois);
 }
 .thankspage_links_ancora:hover .thankspage_img {
     transform: rotateY(180deg);

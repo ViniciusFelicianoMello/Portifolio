@@ -235,13 +235,13 @@
         width: 80%;
         height: 16vw;
         margin-left: -8vw;
-        border-radius: 2em;
+        border-radius: 1em;
     }
 
     .contact_info_box::before {
         width: 80vw;
         height: 10vw;
-        left: -15%;
+        left: -5%;
         top: 20%;
     }
 

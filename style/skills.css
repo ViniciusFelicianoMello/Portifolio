@@ -87,11 +87,10 @@
     height: 6vw;
     margin-top: 2vw  ;
 } .habilidade_info_ling:hover {
-    scale: 1.1;
-    transition: 0.5s;
-    background: var(--cor-dois);
+    scale: 1.05;
+    transform: translateY(-5%);
+    transition: 0.1s;
     border-radius: 10em;
-    animation: imgBanner1 2s infinite linear;
 }
 .linguagens_img {
     width: 4vw;

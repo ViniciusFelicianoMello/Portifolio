@@ -35,14 +35,18 @@
 
 <h2 id="howto">⚒ Como usar</h2>
 
-<p>Projeto bem simples de se usar, nele você pode filtrar, adicionar, editar e deletar os funcionarios à tabela.</p>
+<p>Projeto com diversas interações e animações para deixar uma ótima experiência!.</p>
 
 <ul>
-  <li>★ Clique no '+' para adicionar funcionários a tabela</li>
-  <li>★ Clique no lapis para editar o funcionário a tabela</li>
-  <li>★ Clique na lata de lixo para deletar o funcionário a tabela</li>
-  <li>★ Digite o nome no 'input' para procurar na tabela</li>
-  <li>★ Selecione ascendente ou descescente para ordenar pelo salário</li>
+  <li>★ No cabeçalho, escolha a seção que deseja visualizar, ou se deseja Dark mode ativado</li>
+  <li>★ Na home, pode clicar no Curriculo para visualizar outra pagina, também tem links para Github, Linkedin e Instagram</li>
+  <li>★ Em Sobre mim, pode ver informçaões sobre minha tagetória até aqui no slider, e sobre mim</li>
+  <li>★ Nas habilidades, apenas clique no titulo que deseja ver ou desver as Tecnologias que tenho conhecimento em usar</li>
+  <li>★ Nos serviços, basta clicar no card que deseja ver mais informações sobre o que eu sei fazer na area em especifico</li>
+  <li>★ Em projetos, basta passar o mouse por cima para visualizar mais informações sobre aquele projeto, com links para o website e/ou para o repositório</li>
+  <li>★ Em contate-me, basta clicar no botao do meu numero que sera redirecionado para uma conversa comigo, ou enviar um email atraz do formulário</li>
+  <li>★ No rodapé, é possivel ver links para as seções, mais projetos e redes sociais</li>
+
 </ul>
 
 <p align="right"><a href="#home">⬆️</a></p>

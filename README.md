@@ -23,7 +23,7 @@
 </div>
 
 <h2 id="about">🔍 Sobre</h2>
-<img src="assets/PortfolioBG" alt="backgorund" width="auto" height="auto">
+<img src="assets/PortfolioBG.png" alt="backgorund" width="auto" height="auto">
 
 <p>Projeto realizado para portfólio próprio, onde me apresento e mostro mais dos meus conhecimentos<p>
 <p>O projeto consiste em uma página dedicada a mim e às minhas habilidades. Nela, apresento várias informações e seções, incluindo uma biografia, uma descrição detalhada das minhas competências, os serviços que ofereço, exemplos de projetos realizados, uma seção para contato e um rodapé informativo. O site é enriquecido com diversas animações em CSS e interações dinâmicas com JavaScript, proporcionando uma experiência envolvente e interativa para os visitantes.<p>

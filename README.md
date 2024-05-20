@@ -1,5 +1,5 @@
 <div id="home" align="center">  
-  <a href="https://emplytics.vercel.app/" target="_blank">
+  <a href="https://portifolio-vinicius-mello.vercel.app/" target="_blank">
     <img src="assets/VFM.png" alt="Logo" width="80" height="80">
   </a>
   
@@ -25,12 +25,11 @@
 <h2 id="about">🔍 Sobre</h2>
 <img src="img/EmplyticsBG.png" alt="backgorund" width="auto" height="auto">
 
-<p>Projeto realizado por mim para praticar logica em programação<p>
-<p>O projeto consiste em uma tabela de funcionários de uma empresa, na qual são exibidas informações como nome, idade, email e salário dos funcionários. Além disso, é possível adicionar, editar e excluir os funcionários da tabela. Durante o desenvolvimento, pratiquei a manipulação de modais e realizei um modal de confirmação que permite ao usuário confirmar ou cancelar a exclusão do funcionário selecionado, sempre armazenando no local storage, de forma a nunca perder as informações adicionadas. Essa funcionalidade adiciona uma camada extra de segurança, evitando exclusões acidentais e fornecendo uma experiência mais intuitiva ao usuário.<p>
-<p>
-Além das funcionalidades já mencionadas, o projeto também inclui recursos adicionais para melhorar a usabilidade e a experiência do usuário. Implementei a capacidade de filtrar os funcionários por nome, permitindo que o usuário pesquise um funcionário específico e filtre os resultados com base no nome fornecido. Isso proporciona uma maneira rápida e eficiente de encontrar informações específicas na tabela, além disso, adicionei a capacidade de ordenar os funcionários por salário, oferecendo ao usuário a opção de selecionar entre ordem crescente e decrescente. Essa funcionalidade permite que os usuários organizem os dados de acordo com suas preferências, facilitando a identificação de padrões e a análise dos dados na tabela.</p>
+<p>Projeto realizado para portfólio próprio, onde me apresento e mostro mais dos meus conhecimentos<p>
+<p>O projeto consiste em uma página dedicada a mim e às minhas habilidades. Nela, apresento várias informações e seções, incluindo uma biografia, uma descrição detalhada das minhas competências, os serviços que ofereço, exemplos de projetos realizados, uma seção para contato e um rodapé informativo. O site é enriquecido com diversas animações em CSS e interações dinâmicas com JavaScript, proporcionando uma experiência envolvente e interativa para os visitantes.<p>
+<p>Este projeto foi uma excelente oportunidade para praticar e aprimorar minhas habilidades em JavaScript, já que é meu primeiro projeto desse estilo. O site possui diversas animações e interações, incluindo animações em botões, imagens, textos e projetos. Também implementei um modo escuro (dark mode), um slider, menus dropdown, manipulação de modais e um formulário de email integrado com o Formsubmit, que redireciona para uma página de agradecimento (thankspage). Além disso, o site conta com botões de links diretos para meu currículo, LinkedIn, GitHub, Instagram e uma opção de conversa no WhatsApp, proporcionando uma experiência de usuário dinâmica e envolvente. Espero que aproveite a visita!.</p>
 
-<a href="https://emplytics.vercel.app/">Link do projeto</a>
+<a href="https://portifolio-vinicius-mello.vercel.app/">Link do projeto</a>
 
 <p align="right"><a href="#home">⬆️</a></p>
 

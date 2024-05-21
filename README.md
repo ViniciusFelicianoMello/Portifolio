@@ -1,6 +1,6 @@
 <div id="home" align="center">  
   <a href="https://portifolio-vinicius-mello.vercel.app/" target="_blank">
-    <img src="assets/VFM.png" alt="Logo" width="80" height="80">
+    <img src="assets/VM.png" alt="Logo" width="80" height="80">
   </a>
   
   <h1>Portfólio</h1>
